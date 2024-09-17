@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sarthak</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Dark background */
+            color: #fff; /* Light text */
+        }
+
+        .countdown {
+            font-size: 24px;
+            color: #0033A0; /* Blue */
+            margin-top: 10px;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        header {
+            background-color: #0033A0; /* Blue background */
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            color: #fff; /* White text */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White text */
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #E4002B; /* Red */
+        }
+
+        .portfolio {
+            background-color: #ffffff; /* Dark background */
+            padding: 60px 0;
+        }
+
+        .portfolio .container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 36px;
+            color: #E4002B; /* Red text */
+            margin-bottom: 40px;
+        }
+
+        .portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background-color: #ffffff; /* Dark gray */
+            border: 1px solid #555; /* Medium gray border */
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #922e2e; /* White text */
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 24px;
+            color: #E4002B; /* Red text */
+            margin-top: 20px;
+        }
+
+        .portfolio-item p {
+            font-size: 16px;
+            color: #ccc; /* Light gray text */
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: calc(100% - 40px);
+            }
+
+            nav ul li {
+                margin-left: 10px;
+            }
+        }
+
+        .logo-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link" title="Return to Home">
+                    <h1>Sarthak</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="work.png" alt="Pharmacy Record System">
+                    <h3>Pharmacy Record System</h3>
+                    <p>Keeps records of Pharmacy medicines.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="work.png" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of Project 2.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="work.png" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>Brief description of Project 3.</p>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

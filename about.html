@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarthak's personal website - Learn about his education, skills, interests in politics, cricket, and football.">
+    <meta name="keywords" content="Sarthak, Information Management, Design, Technology, Politics, Cricket, Football">
+    <title>About Me - Sarthak</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Dark background */
+            color: #fff; /* Light text */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #0033A0; /* Blue background */
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo h1 {
+            color: #fff; /* White text */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* White text */
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #E4002B; /* Red hover */
+        }
+
+        /* About Me Section Styles */
+        .about-me {
+            background-color: #ffffff; /* Dark gray background */
+            padding: 60px 0;
+        }
+
+        .about-me .container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            text-align: left;
+        }
+
+        .about-me-content {
+            max-width: 50%;
+            padding-right: 20px;
+        }
+
+        .about-me h2 {
+            font-size: 48px;
+            color: #E4002B; /* Red heading */
+            margin-bottom: 20px;
+        }
+
+        .about-me p,
+        .about-me ul li {
+            font-size: 16px;
+            color: #000000; /* White text */
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-me ul {
+            padding-left: 20px;
+        }
+
+        .about-me ul li {
+            margin-bottom: 10px;
+        }
+
+        .about-me-image {
+            max-width: 50%;
+        }
+
+        .about-me-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            vertical-align: middle;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-me .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-me-content,
+            .about-me-image {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .about-me-content {
+                margin-bottom: 20px;
+            }
+
+            .about-me h2 {
+                font-size: 36px;
+            }
+
+            .about-me p,
+            .about-me ul li {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo h1 {
+                font-size: 20px;
+            }
+
+            nav ul li {
+                margin-left: 10px;
+            }
+
+            .about-me h2 {
+                font-size: 28px;
+            }
+
+            .about-me p,
+            .about-me ul li {
+                font-size: 12px;
+            }
+        }
+
+        .logo-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Main Content -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link" title="Return to Home">
+                    <h1>Sarthak</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+        <div class="container">
+            <div class="about-me-content">
+                <h2>About Me</h2>
+                <p><strong>Education:</strong></p>
+                <ul>
+                    <li>Pursuing a Bachelor's degree in Information Management (BIM).</li>
+                    <li>Keen interest in design and technology.</li>
+                    <li>Comprehensive understanding of data management, system analysis, and IT project management.</li>
+                    <li>Well-prepared to tackle complex challenges in the tech industry.</li>
+                </ul>
+                <p><strong>Skills:</strong></p>
+                <ul>
+                    <li>Skilled in creating design prototypes using tools like Figma.</li>
+                    <li>Combines management and technical skills for strategic and practical information management.</li>
+                </ul>
+                <p><strong>Politics:</strong></p>
+                <ul>
+                    <li>Keen interest in Nepali politics.</li>
+                    <li>Actively follows political developments and current events in Nepal.</li>
+                    <li>Engages in discussions of political issues and their impact on society.</li>
+                </ul>
+                <p><strong>Cricket:</strong></p>
+                <ul>
+                    <li>Enjoys watching international and domestic cricket matches.</li>
+                    <li>Follows major cricket tournaments.</li>
+                    <li>Keeps up with the performance of favorite players and teams.</li>
+                </ul>
+                <p><strong>Football:</strong></p>
+                <ul>
+                    <li>Passionate about following major football leagues and tournaments.</li>
+                </ul>
+            </div>
+            <div class="about-me-image">
+                <img src="sarthak.png" alt="Portrait of Sarthak">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

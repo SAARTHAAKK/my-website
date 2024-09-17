@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Sarthak. Fill out the contact form to send a message.">
+    <meta name="keywords" content="contact, Sarthak, get in touch, message, contact form">
+    <meta name="author" content="Sarthak">
+    <title>Contact Me - Sarthak</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light Gray */
+            color: #333; /* Dark Gray */
+        }
+
+        .countdown {
+            font-size: 24px;
+            color: #0033A0; /* Blue */
+            margin-top: 10px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #0033A0; /* Blue */
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            color: #FFFFFF; /* White */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFFFFF; /* White */
+            font-size: 16px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            color: #E4002B; /* Red */
+        }
+
+        /* Contact Section Styles */
+        .contact {
+            background-color: #ffffff; /* White */
+            padding: 60px 0;
+        }
+
+        .contact .container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            color: #0033A0; /* Blue */
+            margin-bottom: 40px;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff; /* White */
+            padding: 30px;
+            border: 1px solid #0033A0; /* Blue */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px; /* Increased padding */
+            margin-bottom: 20px;
+            border: 1px solid #0033A0; /* Blue */
+            border-radius: 8px; /* Rounded corners */
+            background-color: #f9f9f9; /* Lighter Gray */
+            color: #333; /* Dark Gray */
+            font-size: 16px; /* Consistent font size */
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #E4002B; /* Red border on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        .contact-form button {
+            background-color: #E4002B; /* Red */
+            color: white;
+            padding: 12px 24px; /* Increased padding */
+            border: none;
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer;
+            font-size: 18px; /* Larger font size */
+        }
+
+        .contact-form button:hover {
+            background-color: #C3001C; /* Darker Red */
+        }
+
+        .logo-link {
+            text-decoration: none; /* Remove underline from the logo link */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <h1>Sarthak</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

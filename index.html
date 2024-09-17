@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link"><h1>Sarthak</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hey! <span>I'm Sarthak</span></h1>
+                    <p>Student</p>
+                </div>
+                <div class="hero-image">
+                    <img src="sarthak.png" alt="Sarthak" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Contact: <a href="mailto:sarthakojh@gmail.com">sarthakojh@gmail.com</a></p>
+            <p>Phone: +977 9868731751</p>
+            <p>Address: <a href="https://www.google.com/maps" target="_blank">Hiledole, Kathmandu</a></p>
+        </div>
+    </footer>
+</body>
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    color: #fff; 
+}
+
+header {
+    background-color: #0033A0;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    color: #fff; 
+    font-size: 24px;
+    margin: 0;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #E4002B;
+}
+
+.hero {
+    background-color: #fffafa;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 50%;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #0f0e0e; 
+}
+
+.hero-content h1 span {
+    color: #E4002B;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #000000; 
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    padding: 7px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+footer {
+    background-color: #0033A0; /* Blue */
+    color: white;
+    padding: 9px 0;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo-link {
+    text-decoration: none; /* Remove underline from the logo link */
+}
+</style>
+</html>
